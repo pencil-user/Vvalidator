@@ -21,8 +21,8 @@ This will return a result object that consists of value propert and error proper
 
 More complex example:
 
-``
-const result = V(
+
+    const result = V(
         {
             Name:'Ivan',
             Surname:'Cvetkovic',
@@ -37,6 +37,6 @@ const result = V(
             DateOfBirth: V.date(),
             Cars: [V.string()]
         })
-``
+
 
 Result object will have no errors, but value property will transform Height from string to number. 

@@ -6,7 +6,7 @@ Usage:
 
 We can import it by
 
-`const V = require("./Vvalidator/validator.js`
+``const V = require("./Vvalidator/validator.js``
 
 Simple example:
 

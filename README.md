@@ -8,15 +8,17 @@ We can import it by
 
 ``const V = require("./Vvalidator/validator.js``
 
+Basic usage is ``V(value, schema)``
+
 Simple example:
 
 ``const result = V(55, V.number(22,44))``
 
-This will return a result object that only consists of value property that is 55.
+This will return a result object ``{value: 55}`` because everything is okay.
 
-``const result = V(77, V.number(22,44))``
+``const result = V(8, V.number(22,44))``
 
-This will return a result object that consists of value propert and error property, because 77 is bigger than 44.
+This will return a result object  ``{errors: [ 'Must be equal or higher than 11' ], value: 2 }``, because yur number is too small.
 
 
 More complex example:
@@ -40,3 +42,5 @@ More complex example:
 
 
 Result object will have no errors, but value property will transform Height from string to number. 
+
+You can use ``V.body(schema)`` as express middleware. It will evaluere request body.

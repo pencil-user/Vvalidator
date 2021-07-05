@@ -438,6 +438,7 @@ module.exports = V
 
 
 //-----------------
+//logObject(V('99', V.number(11)))
 
 //logObject(V('2017-2-7', V.date('2011-11-11', '2017-2-7')))
 
